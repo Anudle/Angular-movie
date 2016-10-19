@@ -1,0 +1,15 @@
+<div class='header'>
+<h1>Angular movie API</h1>
+<h2>Enter a full movie name</h2>
+
+<form ng-submit='searchMovie()' name='search' class='form-group'>
+  <input type='text' ng-model='view.textSearch' class='form control search' name='searchTitle' placeholder='Independence Day'>
+<input type='submit' name='submit' value='search'>
+</form>
+</div>
+
+<div ng-repeat='m in view.movies'>
+  <a ng-href='info/{{m.imdbID}}'>
+    <p>{{m.Title}} {{m.Year}}</p>
+  </a>
+</div>

@@ -1,0 +1,29 @@
+<a ng-href='/'>
+  <button> Back to Search</button>
+</a>
+
+<div>
+  <h1> {{view.detail.Title}}</h1>
+  <img src='{{view.detail.Poster}}' alt='movie poster'/>
+</div>
+
+<strong> Starring: </strong>
+{{view.detail.Actors}}
+<p>
+  {{view.detail.plot}}
+</p>
+<h4 class="detailTitle">Awards:</h4>
+      <h4 class="detailInfo">{{view.detail.Awards}}</h4>
+      <h4 class="detailTitle">Director</h4>
+      <h4 class="detailInfo">{{view.detail.Director}}</h4>
+      <h4 class="detailTitle">Rated</h4>
+      <h4 class="detailInfo">{{view.detail.Rated}}</h4>
+      <h4 class="detailTitle">Released</h4>
+      <h4 class="detailInfo">{{view.detail.Released}}</h4>
+      <h4 class="detailTitle">Runtime</h4>
+      <h4 class="detailInfo">{{view.detail.Runtime}}</h4>
+      <h4 class="detailTitle">IMDB Rating</h4>
+      <h4 class="detailInfo">{{view.detail.imdbRating}}</h4>
+      <h4 class="detailTitle">Rotten Tomatoes Rating</h4>
+      <h4 class="detailInfo">{{view.detail.tomatoRating}}</h4>
+    
