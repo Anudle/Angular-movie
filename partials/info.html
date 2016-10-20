@@ -3,27 +3,42 @@
 </a>
 
 <div>
-  <h1> {{view.detail.Title}}</h1>
-  <img src='{{view.detail.Poster}}' alt='movie poster'/>
+  <h1 class='title'> {{view.detail.Title}}</h1>
+  <img class='poster' src='{{view.detail.Poster}}' alt='movie poster'/>
+</div>
+<div class='box'>
+Starring:
+{{view.detail.Actors}}
+</div>
+<div class='box'>
+  {{view.detail.Plot}}
 </div>
 
-<strong> Starring: </strong>
-{{view.detail.Actors}}
-<p>
-  {{view.detail.plot}}
-</p>
-<h4 class="detailTitle">Awards:</h4>
-      <h4 class="detailInfo">{{view.detail.Awards}}</h4>
-      <h4 class="detailTitle">Director</h4>
-      <h4 class="detailInfo">{{view.detail.Director}}</h4>
-      <h4 class="detailTitle">Rated</h4>
-      <h4 class="detailInfo">{{view.detail.Rated}}</h4>
-      <h4 class="detailTitle">Released</h4>
-      <h4 class="detailInfo">{{view.detail.Released}}</h4>
-      <h4 class="detailTitle">Runtime</h4>
-      <h4 class="detailInfo">{{view.detail.Runtime}}</h4>
-      <h4 class="detailTitle">IMDB Rating</h4>
-      <h4 class="detailInfo">{{view.detail.imdbRating}}</h4>
-      <h4 class="detailTitle">Rotten Tomatoes Rating</h4>
-      <h4 class="detailInfo">{{view.detail.tomatoRating}}</h4>
-    
+      <div class='box'>
+      Awards
+      {{view.detail.Awards}}
+      </div>
+      <div class='box'>
+      Director
+      {{view.detail.Director}}
+      </div>
+      <div class='box'>
+      Rated
+      {{view.detail.Rated}}
+      </div>
+      <div class='box'>
+      Released
+      {{view.detail.Released}}
+      </div>
+      <div class='box'>
+      Runtime
+      {{view.detail.Runtime}}
+      </div>
+      <div class='box'>
+      IMDB Rating
+      {{view.detail.imdbRating}}
+      </div>
+      <div class='box'>
+      Rotten Tomatoes Rating
+      {{view.detail.tomatoRating}}
+      </div>

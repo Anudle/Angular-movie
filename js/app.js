@@ -38,6 +38,7 @@ function($scope, $http, $route){
   var url = 'http://www.omdbapi.com/?i=' + movieID +'&tomatoes=true';
   $http.get(url)
   .success(function(data){
+    console.log(data);
     $scope.view.detail = data;
   })
   .catch(function(error){

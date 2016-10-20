@@ -1,0 +1,21 @@
+.title {
+text-align: center;
+}
+.box{
+  text-align: center;
+  width: 50vw;
+  height: 10vh;
+  margin: auto;
+}
+.poster{
+  display: block;
+  margin: auto;
+}
+.header{
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+#table{
+  margin-left: 30vw;
+}
